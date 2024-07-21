@@ -12,7 +12,7 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/customer-management-api.git
+    git clone https://github.com/Anuj2906/mock_project_1
     cd customer-management-api
     ```
 
@@ -29,7 +29,7 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 
 4. Start the server:
     ```sh
-    npm start
+    nodemon server.js
     ```
 
 ## API Endpoints
@@ -40,14 +40,11 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 - Request Body:
     ```json
     {
-        "customer_name": "arthmate",
+        "customer_name": "bob",
         "dob": "2001-09-19",
         "monthly_income": "1200"
     }
     ```
-- Rate limiting: 
-    - Max 1 request per 2 minutes per customer.
-    - Max 2 requests per 5 minutes.
 
 ### Time-Based Save
 
@@ -70,5 +67,6 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 - Finds customers aged between 10 and 25.
 - Response includes the time taken by the API.
 
-## Project Structure
-
+## Rate limiting on all api endpoints: 
+    - Max 1 request per 2 minutes per customer.
+    - Max 2 requests per 5 minutes.
