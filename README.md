@@ -13,7 +13,7 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 1. Clone the repository:
     ```sh
     git clone https://github.com/Anuj2906/mock_project_1
-    cd customer-management-api
+    cd mock_project_1
     ```
 
 2. Install dependencies:
@@ -24,7 +24,6 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 3. Create a `.env` file with your MongoDB connection string:
     ```
     MONGODB_URL=your_mongodb_connection_string
-    PORT=4444
     ```
 
 4. Start the server:
@@ -52,9 +51,9 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 - Request Body:
     ```json
     {
-        "customer_name": "arthmate",
-        "dob": "2001-09-19",
-        "monthly_income": "1200"
+        "customer_name": "alice",
+        "dob": "2003-03-29",
+        "monthly_income": "1500"
     }
     ```
 - Restrictions: 
@@ -64,6 +63,12 @@ A Node.js API for managing customer data with rate limiting and time-based restr
 ### Search Customers by Age
 
 - **GET** `/db-search`
+- Request Body:
+     ```json
+    {
+        "customer_name": "aditya"
+    }
+    ```
 - Finds customers aged between 10 and 25.
 - Response includes the time taken by the API.
 
